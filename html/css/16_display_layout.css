@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.fun-section {
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+}
+
+.half-box {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+}
+
+.photo-fun {
+  display: inline-block;
+  width: 22%;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #00f;
+  border-radius: 15px;
+}
+
+.navi {
+  display: inline;
+  border: 1px solid #d3d3d3;
+  padding: 4px;
+  margin: 2px;
+  border-radius: 15px;
+}
+
+.image {
+  border: 80px solid #d3d3d3;
+  border-radius: 15px;
+}
+
+.category {
+  font-color: #f00;
+}

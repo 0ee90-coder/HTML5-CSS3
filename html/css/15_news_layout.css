@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.news-section {
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+
+  font-size: 0px; /* 스페이스 값을 0으로 만들어주기 위해서 */
+}
+
+.half-box {
+  vertical-align: top;
+  display: inline-block;
+
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  border: 1px solid #d3d3d3;
+
+  font-size: 1rem; /* news-section에서 줄인 폰트사이즈 원래대로 되돌리기 */
+}
+
+.photo-news {
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+  margin: 10px 5px;
+  border: 1px solid #d3d3d3;
+}

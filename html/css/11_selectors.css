@@ -1,0 +1,60 @@
+/* 우선순위 순서 : ID > CLASS > ELEMENT > UNIVERSAL
+
+ID Selector : #
+
+Class Selector : .
+
+Element(Tag) Selector : Tag Name
+
+Universal Selector : *
+*/
+
+/* ID가 first-div인 태그에 대해 스타일을 적용한다. */
+#first-div {
+  background-color: #aaf;
+}
+/* Class가 tall-div인 태그에 대해 스타일을 적용한다. */
+.tall-div {
+  height: 4rem; /* 16px * 4 = 64px */
+}
+/* Class가 small-font-size 인 태그
+   폰트 크기를 0.625 rem ==> 10px
+   글자 색상은 원하는 대로
+*/
+.small-font-size {
+  font-size: 0.625rem;
+  color: #00ee90;
+}
+/*
+   Class가 italic 인 태그
+   폰트에 약간 기울기 주기
+*/
+.italic {
+  font-style: italic;
+  font-size: 4rem;
+}
+
+/*
+   Class가 big-font-size 인 태그
+   폰트 크기를 2rem ==> 32px
+   */
+.big-font-size {
+  font-size: 2rem;
+}
+
+/* body Style: 배경색 ff0 */
+body {
+  background-color: #ff0;
+  font-size: 0.8rem; /*12px*/
+  font-family: sans-serif; /*사용자 컴퓨터에서 정의한 폰트로 글자를 보여주겠다. sans-serif */
+}
+
+/* div 스타일: 배경색 ccc, border_radius: 1rem */
+div {
+  background-color: #ccc;
+  border-radius: 1rem;
+}
+/* Universal Style: 글자 색상 333 */
+* {
+  color: #333;
+}
