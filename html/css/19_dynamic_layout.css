@@ -1,0 +1,12 @@
+body {
+  margin: 0 auto;
+  background-color: #000;
+}
+
+.gagbox {
+  border: 10px solid #fafafa;
+  width: 100%;
+  max-width: 680px;
+  padding: 10px;
+  margin: 0 auto;
+}
