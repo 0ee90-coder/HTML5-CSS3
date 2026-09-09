@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="../css/29_naver_login.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="top">
+        <div class="id">
+          <input type="text" placeholder="아이디" required />
+        </div>
+        <div class="password">
+          <input type="password" placeholder="비밀번호" required />
+        </div>
+        <div class="email">
+          <input
+            type="email"
+            placeholder="[선택]이메일주소 (비밀번호 찾기 등 본인 확인용)"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="name">
+          <input type="text" placeholder="이름" required />
+        </div>
+        <div class="birthdate">
+          <input type="number" placeholder="생년월일 8자리" required />
+        </div>
+        <div class="telecom">
+          <select class="select-rules" required>
+            <option>통신사 선택</option>
+            <option>SKT</option>
+            <option>KT</option>
+            <option>LGU+</option>
+          </select>
+        </div>
+
+        <div class="radio-area">
+          <div class="input-area">
+            <div class="input-field">
+              <label for="male">남자</label>
+              <input type="radio" name="gender" id="male" />
+            </div>
+            <div class="input-field">
+              <label for="female">여자</label>
+              <input type="radio" name="gender" id="female" />
+            </div>
+          </div>
+          <div class="input-area2">
+            <div class="input-field2">
+              <label for="local">내국인</label>
+              <input type="radio" name="people" id="local" />
+            </div>
+            <div class="input-field2">
+              <label for="foreigner">외국인</label>
+              <input type="radio" name="people" id="foreigner" />
+            </div>
+          </div>
+        </div>
+
+        <div class="phone">
+          <input type="tel" placeholder="휴대전화번호" required />
+        </div>
+
+        <div class="agree"></div>
+      </div>
+    </div>
+  </body>
+</html>

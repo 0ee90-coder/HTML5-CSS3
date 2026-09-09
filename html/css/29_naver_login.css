@@ -1,0 +1,180 @@
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+}
+.body {
+  margin: 0;
+  color: #333;
+}
+.id {
+  display: inline-block;
+}
+.id::before {
+}
+.id::after {
+  content: "@naver.com";
+}
+
+input[type="id"] {
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+input[type="password"] {
+  display: inline-block;
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+input[type="email"] {
+  display: inline-block;
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.middle {
+  margin-top: 10px;
+}
+.select-rules {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+input[type="text"] {
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+input[type="number"] {
+  display: inline-block;
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.radio-area {
+  margin: 0px;
+  border: 1px solid #bbb;
+
+  &.input-area,
+  .input-area2 {
+    display: inline-block;
+  }
+}
+
+.input-area {
+  font-size: 0;
+
+  border-radius: 20px;
+
+  display: inline-block;
+
+  margin: 10px 100px 10px 100px;
+
+  & > .input-field {
+    display: inline-block;
+  }
+
+  & label {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px;
+
+    &[for="male"] {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    &[for="female"] {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
+label + input[type="radio"] {
+  display: none;
+}
+
+/* 선택된 radio의 label 스타일 */
+label:has(+ input[type="radio"]:checked) {
+  border: 1px solid #5f5;
+  color: #5f5;
+}
+
+/* 선택되지 않은 radio의 label 스타일 */
+label:has(+ input[type="radio"]:not(:checked)) {
+  border: 1px solid #bbb;
+  color: #bbb;
+}
+
+.input-area2 {
+  font-size: 0;
+
+  border-radius: 20px;
+
+  display: inline-block;
+
+  margin: 10px 100px 10px 100px;
+
+  & > .input-field2 {
+    display: inline-block;
+  }
+
+  & label {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px;
+
+    &[for="local"] {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    &[for="foreigner"] {
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
+label + input[type="radio"] {
+  display: none;
+}
+
+/* 선택된 radio의 label 스타일 */
+label:has(+ input[type="radio"]:checked) {
+  border: 1px solid #5f5;
+  color: #5f5;
+}
+
+/* 선택되지 않은 radio의 label 스타일 */
+label:has(+ input[type="radio"]:not(:checked)) {
+  border: 1px solid #bbb;
+  color: #bbb;
+}
+
+input[type="tel"] {
+  display: inline-block;
+  width: 100%;
+
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
