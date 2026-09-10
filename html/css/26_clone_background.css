@@ -41,26 +41,27 @@ body {
 .header {
   background-color: var(--header-background-color);
 
-  padding: 3px;
+  padding: 3px 5px 3px 10px;
   border-bottom: 1px solid var(--header-border-color);
 
-  font-size: 0px;
+  & div,
+  & img {
+    vertical-align: middle;
+  }
 }
 
-/*
 .header::after {
   clear: both;
   content: "";
-  diplay: block;
-}
-*/
-
-.float-right {
-  float: right;
+  display: block;
 }
 
 .header img {
   cursor: pointer;
+}
+
+.float-right {
+  float: right;
 }
 
 .menu {
@@ -245,6 +246,7 @@ body {
 .footer > div {
   padding: 2.1rem 0;
 }
+
 .logo,
 .write,
 .my {
