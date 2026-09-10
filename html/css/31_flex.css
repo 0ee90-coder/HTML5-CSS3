@@ -1,0 +1,69 @@
+.flex-row {
+  height: 200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  /*flex-wrap: wrap;/*
+
+  /* flex item 들의 간격 */
+  /*gap: 10px;*/
+
+  > div {
+    background-color: aquamarine;
+
+    /* flex items */
+    flex-basis: 100px;
+    flex-grow: 1;
+
+    &:first-child {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.flex-row-reverse {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: space-evenly;
+
+  > li {
+    background-color: aqua;
+  }
+}
+
+.flex-column {
+  height: 200px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /*justify-content: center;
+  align-items: center;*/
+
+  > div {
+    background-color: #0f0;
+
+    flex-basis: 50px;
+  }
+}
+
+.flex-column-reverse {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  align-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+  > li {
+    background-color: #00ee90;
+  }
+}
