@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  width: 100vw;
+  height: 70vh;
+
+  padding: 10px;
+  border: 1px solid #000;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+
+  & > div {
+    border: 1px solid #aaa;
+  }
+
+  & > .merge01 {
+    grid-column: 1 / -1;
+    background-color: aqua;
+  }
+
+  & > .merge02 {
+    grid-column: 2 / -4;
+    grid-row: 2 / 4;
+    background-color: blueviolet;
+  }
+
+  & > .merge03 {
+    grid-column: -5 / -3;
+    background-color: brown;
+  }
+
+  & > .merge04 {
+    grid-column: 4 / -1;
+    grid-row: 3 / -1;
+    background-color: blue;
+  }
+}
