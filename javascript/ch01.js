@@ -4,7 +4,8 @@
 //alrert("hello!!!");
 
 // window.onload 는 한번만 쓴다.
-// window.onload --> 브라우저의 탭이 load 상태가 되었을 때~! executeFunctions 함수를 실행시켜라.
+// window.onload --> 브라우저의 탭이 load 상태가 되었을 때~!
+// executeFunctions 함수를 실행시켜라.
 window.onload = function () {
   // 브라우저 탭의 body에 있는 h1 태그를 읽어와서 그 내용을 가져온다..
   //window에 있는 문서를 가져온다.
